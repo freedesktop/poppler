@@ -19,6 +19,7 @@
 #include <string.h>
 
 #ifdef ENABLE_NSS3
+    #include <prtypes.h>
     #include <hasht.h>
 #else
     static const int HASH_AlgNULL = -1;
