@@ -1514,13 +1514,16 @@ void Annot::invalidateAppearance()
     appearBBox = nullptr;
     appearance.setToNull();
 
-    Object obj2 = annotObj.dictLookup("AP");
-    if (!obj2.isNull())
-        update("AP", Object(objNull)); // Remove AP
+//    Object obj2 = annotObj.dictLookup("AP");
+//    if (!obj2.isNull())
+//        update("AP", Object(objNull)); // Remove AP
 
-    obj2 = annotObj.dictLookup("AS");
-    if (!obj2.isNull())
-        update("AS", Object(objNull)); // Remove AS
+//    obj2 = annotObj.dictLookup("AS");
+//    if (!obj2.isNull())
+//        update("AS", Object(objNull)); // Remove AS
+    //modify 20200617
+    update("AP", Object(objNull));  // Remove AP
+    update("AS", Object(objNull));  // Remove AS
 }
 
 double Annot::getXMin()
