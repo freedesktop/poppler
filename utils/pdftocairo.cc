@@ -48,6 +48,7 @@
 #include <cstdio>
 #include <cmath>
 #include <cstring>
+#include <fcntl.h>
 #include "parseargs.h"
 #include "goo/gmem.h"
 #include "goo/GooString.h"
@@ -385,8 +386,12 @@ static void writePageImage(GooString *filename)
     if (!writer)
         return;
 
-    if (filename->cmp("fd://0") == 0)
+    if (filename->cmp("fd://0") == 0) {
+#ifdef _WIN32
+        setmode(fileno(stdout), O_BINARY);
+#endif
         file = stdout;
+    }
     else
         file = fopen(filename->c_str(), "wb");
 
