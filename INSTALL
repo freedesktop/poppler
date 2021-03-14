@@ -46,7 +46,7 @@ eg
 
   -DENABLE_SPLASH=ON -DBUILD_GTK_TESTS=OFF
 
-A list of all options can be display with the commmand:
+A list of all options can be display with the command:
 
   egrep '^ *(option|set.*STRING)' CMakeLists.txt
 

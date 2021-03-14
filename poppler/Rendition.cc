@@ -139,7 +139,7 @@ void MediaWindowParameters::parseFWParams(Object *obj)
 
 MediaParameters::MediaParameters()
 {
-    // instanciate to default values
+    // instantiate to default values
 
     volume = 100;
     fittingPolicy = fittingUndefined;
@@ -191,7 +191,7 @@ void MediaParameters::parseMediaPlayParameters(Object *obj)
     }
 
     // duration parsing
-    // duration's default value is set to 0, which means : intrinsinc media duration
+    // duration's default value is set to 0, which means : intrinsic media duration
     tmp = obj->dictLookup("D");
     if (tmp.isDict()) {
         Object oname = tmp.dictLookup("S");

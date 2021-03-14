@@ -981,7 +981,7 @@ private:
     int *refLine; // reference line changing elements
     int a0i; // index into codingLine
     bool err; // error on current line
-    int outputBits; // remaining ouput bits
+    int outputBits; // remaining output bits
     int buf; // character buffer
 
     void addPixels(int a1, int blackPixels);

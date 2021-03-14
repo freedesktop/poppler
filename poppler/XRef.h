@@ -179,7 +179,7 @@ public:
     // Returns false if unknown or file is not damaged.
     bool getStreamEnd(Goffset streamStart, Goffset *streamEnd);
 
-    // Retuns the entry that belongs to the offset
+    // Returns the entry that belongs to the offset
     int getNumEntry(Goffset offset);
 
     // Scans the document and sets special flags in all xref entries. One of those

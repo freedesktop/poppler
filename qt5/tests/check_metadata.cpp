@@ -244,7 +244,7 @@ void TestMetaData::checkPdfId()
     const QByteArray referenceUpdateId("39AECAE6D8FB11D7A902003065D630AA");
 
     {
-        // no IDs wanted, just existance check
+        // no IDs wanted, just existence check
         QVERIFY(doc->getPdfId(nullptr, nullptr));
     }
     {

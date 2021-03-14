@@ -44,7 +44,7 @@ void TestForms::testCheckbox()
     QCOMPARE(chkFormFieldButton->state(), false);
     // let's mark it as 'checked'
     chkFormFieldButton->setState(true);
-    // now test if it was succesfully 'checked'
+    // now test if it was successfully 'checked'
     QCOMPARE(chkFormFieldButton->state(), true);
 }
 

@@ -1211,7 +1211,7 @@ public:
 
       \note This should be called before any rendering happens.
 
-      \note It is assumed that poppler takes over the owernship of the corresponding cmsHPROFILE. In particular,
+      \note It is assumed that poppler takes over the ownership of the corresponding cmsHPROFILE. In particular,
       it is no longer the caller's responsibility to close the profile after use.
 
        \since 0.12
@@ -1705,7 +1705,7 @@ QString subject = m_doc->info("Subject");
       - as second step, if the 'DestinationName' is not empty, then the destination
         can be resolved using linkDestination()
 
-      Note also that if 'ExternalFileName' is not emtpy, then the destination refers
+      Note also that if 'ExternalFileName' is not empty, then the destination refers
       to that document (and not to the current one).
 
       \returns the TOC, or NULL if the Document does not have one
@@ -2343,7 +2343,7 @@ public:
         PlayOnce, ///< Play the movie once, closing the movie controls at the end
         PlayOpen, ///< Like PlayOnce, but leaving the controls open
         PlayRepeat, ///< Play continuously until stopped
-        PlayPalindrome ///< Play forward, then backward, then again foward and so on until stopped
+        PlayPalindrome ///< Play forward, then backward, then again forward and so on until stopped
     };
 
     ~MovieObject();

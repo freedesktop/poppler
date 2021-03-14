@@ -782,7 +782,7 @@ if(PKG_CONFIG_EXECUTABLE)
     poppler_create_install_pkgconfig(poppler-cpp.pc ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
   endif()
 else()
-  MESSAGE(STATUS ".pc files will not be installed becasue of missing 'pkg-config'!")
+  MESSAGE(STATUS ".pc files will not be installed because of missing 'pkg-config'!")
 endif()
 
 # Summarize build options & display warnings for user

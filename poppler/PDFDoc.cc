@@ -1516,7 +1516,7 @@ Object PDFDoc::createTrailerDict(int uxrefSize, bool incrUpdate, Goffset startxR
     // - current time
     // - file name
     // - file size
-    // - values of entry in information dictionnary
+    // - values of entry in information dictionary
     GooString message;
     char buffer[256];
     sprintf(buffer, "%i", (int)time(nullptr));

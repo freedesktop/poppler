@@ -114,7 +114,7 @@ public:
 
        \note The randomization prefix of the embedded fonts
        are not removed. The font names including these
-       prefixes are insuffucient to determine whether the
+       prefixes are insufficient to determine whether the
        two fonts are same or different.
 
        \note The clients should not assume that the

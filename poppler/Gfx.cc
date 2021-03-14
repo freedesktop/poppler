@@ -700,7 +700,7 @@ void Gfx::go(bool topLevel)
 
             // did the command throw an exception
             if (commandAborted) {
-                // don't propogate; recursive drawing comes from Form XObjects which
+                // don't propagate; recursive drawing comes from Form XObjects which
                 // should probably be drawn in a separate context anyway for caching
                 commandAborted = false;
                 break;

@@ -258,7 +258,7 @@ static AnnotQuadrilaterals *create_annot_quads_from_poppler_quads(GArray *quads)
     return new AnnotQuadrilaterals(std::move(quads_array), quads->len);
 }
 
-/* If @crop_box parameter is non null, it will substract the crop_box offset
+/* If @crop_box parameter is non null, it will subtract the crop_box offset
  * from the coordinates of the returned #PopplerQuadrilateral array */
 static GArray *create_poppler_quads_from_annot_quads(AnnotQuadrilaterals *quads_array, const PDFRectangle *crop_box)
 {

@@ -84,7 +84,7 @@ public:
     // Returns true if <c> is a whitespace character.
     static bool isSpace(int c);
 
-    // often (e.g. ~30% on PDF Refernce 1.6 pdf file from Adobe site) getChar
+    // often (e.g. ~30% on PDF Reference 1.6 pdf file from Adobe site) getChar
     // is called right after lookChar. In order to avoid expensive re-doing
     // getChar() of underlying stream, we cache the last value found by
     // lookChar() in lookCharLastValueCached. A special value
